@@ -3,7 +3,7 @@
 void setup()
 {
 	size(600, 600);
-	background(backA,backB,backC);
+	
 }
 
 int groA = 211;
@@ -20,6 +20,7 @@ void draw() {
   /*GROUND*/
   
   	noStroke();
+  	background(backA,backB,backC);
   	fill(groA,groB,groC);
   	rect(0,450, 600, 350);
   	cactus();

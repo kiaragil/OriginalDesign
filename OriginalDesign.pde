@@ -3,9 +3,17 @@
 void setup()
 {
 	size(600, 600);
-  
+	background(back1,back2,back3);
 }
 
+int groA = 211;
+int groB = 150;
+int groC= 69;	
+
+int back1 = 164;
+int back2 = 214;
+int back3 = 201;
+	
 
 void draw() {
   
@@ -16,12 +24,6 @@ void draw() {
   	rect(0,450, 600, 350);
   	cactus();
 }
-
-
-
-int groA = 211;
-int groB = 150;
-int groC= 69;
 
 void mouseClicked() {
 

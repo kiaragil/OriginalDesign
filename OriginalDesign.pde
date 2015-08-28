@@ -55,21 +55,21 @@ void mouseClicked() {
     /*GROUND COLOR*/
 
    	if (groA == 211) {
-      		groA = 166;
+      		groA = 109;
       	} 
     	else {
       		groA = 211;
     	}
 
    	if (groB == 150) {
-      		groB = 93;
+      		groB = 79;
     	} 
     	else {
       		groB = 150;
       	}
 
   	if (groC == 69) {
-    		groC = 22;
+    		groC = 72;
   	} 
   	else {
       		groC = 69;

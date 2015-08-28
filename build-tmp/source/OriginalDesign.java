@@ -28,25 +28,30 @@ public void setup()
 public void draw() {
   
   /*GROUND*/
-  background(1,1,1);
+  
   noStroke();
   fill(groA,groB,groC);
   rect(0,450, 600, 350);
+  cactus();
 }
 
-// int groA = 211;
-// int groB = 150;
-// int groC= 69;
+
+
+int groA = 211;
+int groB = 150;
+int groC= 69;
 
 public void mouseClicked() {
-  /*SKY COLOR*/
 
-  /*END SKY*/
 
     /*GROUND COLOR*/
-    int groA = 211;
-	int groB = 150;
-	int groC= 69;
+
+    if (groA == 211) {
+      groA = 72;
+      } 
+    else {
+      groA = 211;
+    }
 
     if (groA == 211) {
       groA = 72;
@@ -69,6 +74,26 @@ public void mouseClicked() {
       groC = 69;
   }
 
+  if (cact1 == 160) {
+    cact1 = 108;
+  } 
+  else {
+      cact1 = 160;
+  }
+
+  if (cact2 == 178) {
+    cact2 = 117;
+  } 
+  else {
+      cact2 = 178;
+  }
+  
+  if (cact3 == 118) {
+    cact3= 88;
+  } 
+  else {
+      cact3 = 118;
+  }
   /*END GROUND*/
 
   /*CACTUS COLOR*/
@@ -77,35 +102,36 @@ public void mouseClicked() {
 
 }
 
-
+	int cact1 = 160;
+	int cact2 = 178;
+	int cact3 = 118;
 
 public void cactus(){
-  int cactusy;
-    int cactusx;
-    cactusy = 450;
-    cactusx = 60;
+	
+  	int cactusy = 450;
+    int cactusx = 280;
     noStroke();
 
-  fill(160, 178, 118);
-  rect(cactusx, cactusy, 50,-150); //body
-  rect(cactusx-41, cactusy-96,41,36); //left arm
-  rect(cactusx+41, cactusy-87, 54,33); //right arm
-  rect(cactusx+63, cactusy-118,32,43); //right branch
-  rect(cactusx-41, cactusy-118,30,32); //left branch
+  fill(cact1, cact2, cact3);
+  rect(cactusx, cactusy, 73,-250); //body
+  rect(cactusx-79, cactusy-153,87,48); //left arm
+  rect(cactusx+49, cactusy-178, 97,51); //right arm
+  rect(cactusx+101, cactusy-217,45,47); //right branch
+  rect(cactusx-39, cactusy-180,-40,52); //left branch
 }
 public void nightCactus(){
-  int cactusy;
+   int cactusy;
     int cactusx;
     cactusy = 450;
-    cactusx = 60;
+    cactusx = 280;
     noStroke();
 
   fill(108, 117, 88);
-  rect(cactusx, cactusy, 50,-150); //body
-  rect(cactusx-41, cactusy-96,41,36); //left arm
-  rect(cactusx+41, cactusy-87, 54,33); //right arm
-  rect(cactusx+63, cactusy-118,32,43); //right branch
-  rect(cactusx-41, cactusy-118,30,32); //left branch
+  rect(cactusx, cactusy, 73,-250); //body
+  rect(cactusx-79, cactusy-153,87,48); //left arm
+  rect(cactusx+49, cactusy-178, 97,51); //right arm
+  rect(cactusx+101, cactusy-217,45,47); //right branch
+  rect(cactusx-39, cactusy-180,-40,52); //left branch
 }
   static public void main(String[] passedArgs) {
     String[] appletArgs = new String[] { "OriginalDesign" };

@@ -112,8 +112,8 @@ int cactA = 160;
 int cactB = 178;
 int cactC = 118;
 
-int sunX = 500
-int sunY = 100
+int sunX = 500;
+int sunY = 100;
 void sun(){
 	noStroke();
 	fill(245, 223, 133);

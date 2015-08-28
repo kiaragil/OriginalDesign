@@ -54,7 +54,8 @@ void mouseClicked() {
   	else {
       		backC = 204;
   	}
-    /SKY END*/
+    /*SKY END*/
+    
     /*GROUND COLOR*/
 
    	if (groA == 211) {
@@ -111,10 +112,20 @@ int cactA = 160;
 int cactB = 178;
 int cactC = 118;
 
+int sunX = 500
+int sunY = 100
 void sun(){
 	noStroke();
 	fill(245, 223, 133);
-	ellipse(500,100,120,120);
+	ellipse(sunX,sunY,120,120);
+}
+void moon(){
+	fill(245, 223, 133);
+	ellipse(sunX,sunY,120,120);
+	noStroke();
+	fill(60,84,86);
+	ellipse(sunX+46,sunY-2,150,150);
+
 }
 
 void cactus(){

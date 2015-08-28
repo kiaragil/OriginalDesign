@@ -17,13 +17,16 @@ int backC = 204;
 
 void draw() {
   
-  /*GROUND*/
+  /*BACKGROUND*/
   
   	noStroke();
   	background(backA,backB,backC);
   	fill(groA,groB,groC);
   	rect(0,450, 600, 350);
+  	
+ /*OTHER STUFF*/
   	cactus();
+  	sun();
 }
 
 void mouseClicked() {
@@ -107,6 +110,12 @@ void mouseClicked() {
 int cactA = 160;
 int cactB = 178;
 int cactC = 118;
+
+void sun(){
+	noStroke();
+	fill(245, 223, 133);
+	ellipse(20,560,120,120);
+}
 
 void cactus(){
 	int cactusy = 450;

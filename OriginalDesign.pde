@@ -3,16 +3,16 @@
 void setup()
 {
 	size(600, 600);
-	background(back1,back2,back3);
+	background(backA,backB,backC);
 }
 
 int groA = 211;
 int groB = 150;
 int groC= 69;	
 
-int back1 = 186;
-int back2 = 214;
-int back3 = 204;
+int backA = 186;
+int backB = 214;
+int backC = 204;
 	
 
 void draw() {
@@ -28,6 +28,29 @@ void draw() {
 void mouseClicked() {
 
 
+    /*SKY COLOR*/
+    
+    	if ( backA== 186) {
+      		backA = 53;
+      	} 
+    	else {
+      		backA = 186;
+    	}
+
+   	if (backB == 214) {
+      		backB = 80;
+    	} 
+    	else {
+      		backB = 214;
+      	}
+
+  	if (backC == 204) {
+    		backC = 86;
+  	} 
+  	else {
+      		backC = 204;
+  	}
+    /SKY END*/
     /*GROUND COLOR*/
 
    	if (groA == 211) {
@@ -55,44 +78,46 @@ void mouseClicked() {
 
   /*CACTUS COLOR*/
   
-    	if (cact1 == 160) {
-    		cact1 = 108;
+    	if (cactA == 160) {
+    		cactA = 108;
   	} 
   	else {
-      		cact1 = 160;
+      		cactA = 160;
   	}
 
-  	if (cact2 == 178) {
-    		cact2 = 117;
+  	if (cactB == 178) {
+    		cactB = 117;
   	} 
   	else {
-      		cact2 = 178;
+      		cactB = 178;
   	}
   
-  	if (cact3 == 118) {
-    		cact3= 88;
+  	if (cactC == 118) {
+    		cactC= 88;
   	} 
   	else {
-      		cact3 = 118;
+      		cactC = 118;
   	}
 
   /*END CACTUS*/
 
 }
 
-int cact1 = 160;
-int cact2 = 178;
-int cact3 = 118;
+int cactA = 160;
+int cactB = 178;
+int cactC = 118;
 
 void cactus(){
 	int cactusy = 450;
   	int cactusx = 280;
   	noStroke();
 
-  	fill(cact1, cact2, cact3);
+  	fill(cactA, cactB, cactC);
   	rect(cactusx, cactusy, 73,-250); //body
   	rect(cactusx-79, cactusy-153,87,48); //left arm
   	rect(cactusx+49, cactusy-178, 97,51); //right arm
   	rect(cactusx+101, cactusy-217,45,47); //right branch
   	rect(cactusx-39, cactusy-180,-40,52); //left branch
 }
+
+

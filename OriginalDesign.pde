@@ -32,14 +32,14 @@ void mouseClicked() {
     /*SKY COLOR*/
     
     	if ( backA== 186) {
-      		backA = 53;
+      		backA = 60;
       	} 
     	else {
       		backA = 186;
     	}
 
    	if (backB == 214) {
-      		backB = 80;
+      		backB = 84;
     	} 
     	else {
       		backB = 214;

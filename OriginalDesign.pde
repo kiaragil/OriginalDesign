@@ -114,7 +114,7 @@ int cactC = 118;
 void sun(){
 	noStroke();
 	fill(245, 223, 133);
-	ellipse(20,560,120,120);
+	ellipse(500,100,120,120);
 }
 
 void cactus(){

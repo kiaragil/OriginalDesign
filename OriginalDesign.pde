@@ -10,9 +10,9 @@ int groA = 211;
 int groB = 150;
 int groC= 69;	
 
-int back1 = 164;
+int back1 = 186;
 int back2 = 214;
-int back3 = 201;
+int back3 = 204;
 	
 
 void draw() {
